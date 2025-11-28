@@ -16,7 +16,8 @@ router = routers.DefaultRouter()
 router.register("cinema_halls", CinemaHallViewSet, basename="cinema_halls")
 router.register("genres", GenreViewSet, basename="genre")
 router.register("movies", MovieViewSet, basename="movie")
-router.register("movie_sessions", MovieSessionViewSet, basename="movie_sessions")
+router.register("movie_sessions", MovieSessionViewSet,
+                basename="movie_sessions")
 router.register("actors", ActorViewSet, basename="actor")
 
 urlpatterns = [
